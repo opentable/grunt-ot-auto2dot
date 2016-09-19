@@ -50,6 +50,7 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-0.1.0 Initial Release
-0.1.1 Documentation Update
-0.1.2 More Docs
+ * 0.1.0 Initial Release
+ * 0.1.1 Documentation Update
+ * 0.1.2 More Docs
+ * 0.1.3 Prettier Docs
