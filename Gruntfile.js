@@ -30,20 +30,9 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     auto2dot: {
-      default_options: {
-        options: {
-        },
+      basic: {
         files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+          'tmp/basic.dot': 'test/fixtures/basic.js'
         }
       }
     },

@@ -22,27 +22,18 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
-exports.ot_auto2dot = {
+exports.auto2dot = {
   setUp: function(done) {
     // setup here if necessary
     done();
   },
-  default_options: function(test) {
+  basic: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/default_options');
-    var expected = grunt.file.read('test/expected/default_options');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    var actual = grunt.file.read('tmp/basic.dot');
+    var expected = grunt.file.read('test/expected/basic.dot');
+    test.equal(actual, expected, 'Should output correct GraphViz file');
 
     test.done();
-  },
-  custom_options: function(test) {
-    test.expect(1);
-
-    var actual = grunt.file.read('tmp/custom_options');
-    var expected = grunt.file.read('test/expected/custom_options');
-    test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
-
-    test.done();
-  },
+  }
 };

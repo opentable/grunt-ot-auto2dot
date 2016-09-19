@@ -35,5 +35,8 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "dependencies": {
+    "auto2dot": "github:duereg/auto2dot"
+  }
 }
